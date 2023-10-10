@@ -1,0 +1,7 @@
+.about-page > *:not(h1) {
+  text-align: left;
+}
+
+h1.notes {
+  margin-top: 35px;
+}

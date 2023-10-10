@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Payspace Front-End Assessment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between p-6 px-8"
+        aria-label="Global"
+      >
+        <div class="flex flex-1">
+          <a href="index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">PaySpace</span>
+            <img
+              class="h-8 w-auto"
+              src="https://www.payspace.com/wp-content/uploads/2020/05/payspace-logo-new.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="flex gap-x-10">
+          <a
+            href="index.html"
+            class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 text-sm font-semibold leading-6 text-gray-900"
+            >Home</a
+          >
+          <a
+            href="books.html"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >Books</a
+          >
+          <a
+            href="about.html"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >About</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Front-End Assessment Part 2</h1>
+      <div class="heading-imgs">
+        <img
+          src="data:image/png;base64,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"
+        />
+      </div>
+      <h3>Implemented by <strong>Lario Borges</strong></h3>
+    </main>
+
+    <footer>
+      <p>Copyright PaySpace 2023</p>
+      <section class="flex gap-x-12 justify-between">
+        <a
+          href="index.html"
+          class="flex items-center gap-x-1 text-sm font-semibold leading-6"
+          >Home</a
+        >
+        <a href="books.html" class="text-sm font-semibold leading-6">Books</a>
+        <a href="about.html" class="text-sm font-semibold leading-6">About</a>
+      </section>
+    </footer>
+  </body>
+</html>

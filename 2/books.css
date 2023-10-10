@@ -1,0 +1,35 @@
+table {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+table thead td {
+  background-color: #58ae39;
+  color: white;
+  font-weight: 600;
+}
+
+table td {
+  width: 33%;
+  padding: 6px;
+  border: 1px solid #666;
+}
+
+.search {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.search input {
+  width: 250px;
+  font-size: 18px;
+  padding: 8px;
+  border: 1px solid #666;
+  border-radius: 8px;
+}
+
+.sort {
+    text-align: left;
+}

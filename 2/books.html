@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Payspace Front-End Assessment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="books.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between p-6 px-8"
+        aria-label="Global"
+      >
+        <div class="flex flex-1">
+          <a href="index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">PaySpace</span>
+            <img
+              class="h-8 w-auto"
+              src="https://www.payspace.com/wp-content/uploads/2020/05/payspace-logo-new.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="flex gap-x-10">
+          <a
+            href="index.html"
+            class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 text-sm font-semibold leading-6 text-gray-900"
+            >Home</a
+          >
+          <a
+            href="books.html"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >Books</a
+          >
+          <a
+            href="about.html"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >About</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Books</h1>
+
+      <div class="sort">
+        <label for="sortbooks">Sort by:</label>
+
+        <select name="sortbooks" id="sortbooks">
+          <option value="title_ascending">Title ascending</option>
+          <option value="title_descending">Title descending</option>
+          <option value="author_ascending">Author ascending</option>
+          <option value="author_descending">Author descending</option>
+        </select>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search" id="searchBooks" />
+      </div>
+
+      <div id="books">
+        <table>
+          <thead>
+            <tr>
+              <td>Title</td>
+              <td>Author</td>
+              <td>Year</td>
+            </tr>
+          </thead>
+          <tbody>
+            <td colspan="3">No Books</td>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright PaySpace 2023</p>
+      <section class="flex gap-x-12 justify-between">
+        <a
+          href="index.html"
+          class="flex items-center gap-x-1 text-sm font-semibold leading-6"
+          >Home</a
+        >
+        <a href="books.html" class="text-sm font-semibold leading-6">Books</a>
+        <a href="about.html" class="text-sm font-semibold leading-6">About</a>
+      </section>
+    </footer>
+  </body>
+
+  <script src="books.js"></script>
+</html>

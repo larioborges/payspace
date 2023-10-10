@@ -1,0 +1,16 @@
+.books-page .search {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.books-page .search input {
+  width: 250px;
+  font-size: 18px;
+  padding: 8px;
+  border: 1px solid #666;
+  border-radius: 8px;
+}
+
+.books-page .sort {
+  text-align: left;
+}

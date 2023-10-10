@@ -1,0 +1,7 @@
+1. using a map function would be more efficient than a forEach, also items should be null checked. for example
+
+<% items != null && items.map(i => <li>item.name</li>) %>
+
+
+2. When rendering a list it is more efficient to use a 'key' so that existing nodes
+   can be reused for rendering efficiency.

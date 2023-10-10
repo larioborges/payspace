@@ -1,0 +1,18 @@
+table.books {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+table.books thead td {
+  background-color: #58ae39;
+  color: white;
+  font-weight: 600;
+}
+
+table.books td {
+  width: 33%;
+  padding: 6px;
+  border: 1px solid #666;
+}
